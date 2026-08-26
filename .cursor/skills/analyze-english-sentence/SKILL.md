@@ -2,11 +2,10 @@
 name: analyze-english-sentence
 description: >-
   Analyzes English sentences or paragraphs in a New Concept English study style:
-  sentence pattern (SVO etc.), Chinese translation, slash sense-group split,
-  then slightly hard words/phrases with IPA. Use when the user says
-  分析这句, 分析这段, 帮我分析, 按新概念分析, or pastes English and asks for
-  vocabulary, sentence structure, sense-group splitting, or translation for
-  learning.
+  sentence pattern (SVO etc.), Chinese translation, then slightly hard
+  words/phrases with IPA. Use when the user says 分析这句, 分析这段, 帮我分析,
+  按新概念分析, or pastes English and asks for vocabulary, sentence structure,
+  or translation for learning.
 ---
 
 # 英文句子学习分析（新概念风格）
@@ -20,8 +19,7 @@ description: >-
 1. **原句**
 2. **句型分析**
 3. **翻译**
-4. **用 / 切分**
-5. **稍难词汇 / 短语**
+4. **稍难词汇 / 短语**
 
 ## 各节要求
 
@@ -74,13 +72,7 @@ At the same time, the $794 billion figure likely overstates the amount of US inv
 - 给出准确、通顺的中文翻译。
 - 一句英文对应一句（或自然分段的）中文；不要逐词生硬直译。
 
-### 4. 用 / 切分
-
-- 按意群用 `/` 分开，便于朗读停顿。
-- 切分粒度适中：不要每个词都切，也不要整句不切。
-- 多句时逐句切分。
-
-### 5. 稍难词汇 / 短语
+### 4. 稍难词汇 / 短语
 
 - 只列**稍微有点难**的词或短语（中级偏上：专业词、固定搭配、易混义项、习语）。
 - 跳过超基础词（a/the/is/of 等），除非在本句有特殊用法。
@@ -124,9 +116,6 @@ Goldman Sachs Research adjusted the widely cited measures of US hyperscaler cape
 
 ### 翻译
 高盛研究部调整了此前被广泛引用的美国超大规模云厂商资本支出指标，以便得出更为全面的估算。
-
-### 用 / 切分
-Goldman Sachs Research / adjusted / the widely cited measures / of US hyperscaler capex / to produce / a more comprehensive estimate.
 
 ### 稍难词汇 / 短语
 
