@@ -2,10 +2,10 @@
 name: analyze-english-sentence
 description: >-
   Analyzes English sentences or paragraphs in a New Concept English study style:
-  sentence pattern (SVO etc.), Chinese translation, then slightly hard
-  words/phrases with IPA. Use when the user says 分析这句, 分析这段, 帮我分析,
-  按新概念分析, or pastes English and asks for vocabulary, sentence structure,
-  or translation for learning.
+  sentence pattern (SVO etc.), Chinese translation, slightly hard words/phrases
+  with IPA, then a CET-4/CET-6/考研-style difficulty grade. Use when the user
+  says 分析这句, 分析这段, 帮我分析, 按新概念分析, or pastes English and asks for
+  vocabulary, sentence structure, or translation for learning.
 ---
 
 # 英文句子学习分析（新概念风格）
@@ -20,6 +20,7 @@ description: >-
 2. **句型分析**
 3. **翻译**
 4. **稍难词汇 / 短语**
+5. **难易度**
 
 ## 各节要求
 
@@ -86,6 +87,36 @@ At the same time, the $794 billion figure likely overstates the amount of US inv
   - 词已是原形、或变形极常规且无学习价值时（如简单规则过去式且释义已够）可省略全套，但本句若出现 `adjusted` / `understates` / `cited` 这类，优先补全。
   - 写法示例（释义列内）：`本句：过去式。全套：adjust / adjusts / adjusted / adjusted / adjusting`
 
+### 5. 难易度
+
+放在全文**最后**。用国内常见考试档次给整段（或主句）定级，方便用户对照自己的水平。
+
+**档次（由易到难，只选一档为主结论）：**
+
+| 档次 | 大致对应 |
+|---|---|
+| 初中 | 中考英语 |
+| 高中 | 高考英语 |
+| 四级 | 大学英语四级 CET-4 |
+| 六级 | 大学英语六级 CET-6 |
+| 考研 | 考研英语（一/二）阅读难度 |
+| 专八 / 高级 | 英语专业八级，或同等学术/外刊难度 |
+| 专业阅读 | 明显超出考试：投行研报、学术论文、强领域术语 |
+
+**写法（固定两行，可再加半句理由）：**
+
+```
+### 难易度
+**六级偏上 / 考研阅读** — 句式不绕，但 `hyperscaler`、`capex` 等财经术语拉高门槛。
+```
+
+规则：
+
+- 综合看：**词汇**（术语占比）、**句长与嵌套**、**语域**（日常 / 新闻 / 研报）。
+- 主结论用加粗档次名；若介于两档，写成 `六级偏上`、`考研～专八` 等，不要列一长串考试名。
+- 一段多句时给**整体**一档；只有某句明显难很多时可括号点一句。
+- 默认简短（1～2 行），不要写成评分报告。
+
 ## 可选加料（仅当用户额外要求时）
 
 - 更口语 / 更书面的改写
@@ -125,3 +156,6 @@ Goldman Sachs Research adjusted the widely cited measures of US hyperscaler cape
 | widely cited | `/ˈwaɪdli saɪtɪd/` | 被广泛引用的。cited 本句：过去分词（作定语）。cite：cite / cites / cited / cited / citing |
 | hyperscaler | `/ˈhaɪpəˌskeɪlə/` | 超大规模云厂商 |
 | capex | `/ˈkæpeks/` | capital expenditure，资本支出 |
+
+### 难易度
+**六级偏上 / 考研阅读** — 主干清楚（S+V+O+目的状语），难点在 `hyperscaler`、`capex`、`widely cited measures` 等书面财经表达。
