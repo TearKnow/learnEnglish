@@ -77,10 +77,22 @@ At the same time, the $794 billion figure likely overstates the amount of US inv
 
 - 只列**稍微有点难**的词或短语（中级偏上：专业词、固定搭配、易混义项、习语）。
 - 跳过超基础词（a/the/is/of 等），除非在本句有特殊用法。
-- 用表格：`词/短语 | 音标 | 释义`。
+- **表格前先写一行词性图例**（固定写法，每段分析写一次即可）：
+
+```
+词性：n. 名词 | v. 动词 | adj. 形容词 | adv. 副词 | prep. 介词 | conj. 连词 | phr. 短语/搭配
+```
+
+  若本段用到其他标注，可临时补在同行末尾（如 `pron. 代词`、`num. 数词`），不必每次把全部词类写全。
+- 用表格：`词/短语 | 音标 | 词性 | 释义`（**词性列标本句用法**）。
+- 词性写法：
+  - 单词用缩写：`n.` / `v.` / `adj.` / `adv.` 等。
+  - 短语、固定搭配用 `phr.`；若短语核心是动词结构，也可写 `v. phr.`（如 `lie in`、`blind sb to sth`）。
+  - 一词多性时，**只标本句实际用法**；必要时在释义里补一句「亦可作…」。
+  - 分词作定语时：按句法功能标 `adj.`（或 `adj.（分词）`），不要只标成 `v.`。
 - 音标用 IPA，单词写英式或美式均可，前后用斜杠包住（如 `/əˈdʒʌst/`）；短语可标核心词，或按意群分词标注。
 - 释义简洁，必要时补一句本句中的含义。
-- 专有名词、缩写（如 capex）要解释；缩写可写拼读或展开词的音标。
+- 专有名词、缩写（如 capex）要解释；缩写可写拼读或展开词的音标；词性一般标 `n.`。
 - **非原形时补时态/词形**（仅对收入表中的动词、以及明显变形且值得记的形容词/分词）：
   - 在释义里先标明**本句中的形式**（如：过去式 / 过去分词 / 现在分词 / 第三人称单数 / 被动等）。
   - 再紧跟一行或同格内列出常用全套：原形、第三人称单数、过去式、过去分词、现在分词（不规则动词务必写全）。
@@ -150,12 +162,14 @@ Goldman Sachs Research adjusted the widely cited measures of US hyperscaler cape
 
 ### 稍难词汇 / 短语
 
-| 词/短语 | 音标 | 释义 |
-|---|---|---|
-| adjusted | `/əˈdʒʌstɪd/` | 调整。本句：过去式。全套：adjust / adjusts / adjusted / adjusted / adjusting |
-| widely cited | `/ˈwaɪdli saɪtɪd/` | 被广泛引用的。cited 本句：过去分词（作定语）。cite：cite / cites / cited / cited / citing |
-| hyperscaler | `/ˈhaɪpəˌskeɪlə/` | 超大规模云厂商 |
-| capex | `/ˈkæpeks/` | capital expenditure，资本支出 |
+词性：n. 名词 | v. 动词 | adj. 形容词 | adv. 副词 | prep. 介词 | conj. 连词 | phr. 短语/搭配
+
+| 词/短语 | 音标 | 词性 | 释义 |
+|---|---|---|---|
+| adjusted | `/əˈdʒʌstɪd/` | v. | 调整。本句：过去式。全套：adjust / adjusts / adjusted / adjusted / adjusting |
+| widely cited | `/ˈwaɪdli saɪtɪd/` | adj.（分词） | 被广泛引用的。cited 本句：过去分词（作定语）。cite：cite / cites / cited / cited / citing |
+| hyperscaler | `/ˈhaɪpəˌskeɪlə/` | n. | 超大规模云厂商 |
+| capex | `/ˈkæpeks/` | n. | capital expenditure，资本支出 |
 
 ### 难易度
 **六级偏上 / 考研阅读** — 主干清楚（S+V+O+目的状语），难点在 `hyperscaler`、`capex`、`widely cited measures` 等书面财经表达。
