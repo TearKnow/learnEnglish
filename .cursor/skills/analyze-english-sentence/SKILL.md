@@ -2,8 +2,8 @@
 name: analyze-english-sentence
 description: >-
   Analyzes English sentences or paragraphs in a New Concept English study style:
-  sentence pattern (SVO etc.), slash sense-group split, slightly hard
-  words/phrases with IPA, then Chinese translation. Use when the user says
+  sentence pattern (SVO etc.), Chinese translation, slash sense-group split,
+  then slightly hard words/phrases with IPA. Use when the user says
   分析这句, 分析这段, 帮我分析, 按新概念分析, or pastes English and asks for
   vocabulary, sentence structure, sense-group splitting, or translation for
   learning.
@@ -19,9 +19,9 @@ description: >-
 
 1. **原句**
 2. **句型分析**
-3. **用 / 切分**
-4. **稍难词汇 / 短语**
-5. **翻译**
+3. **翻译**
+4. **用 / 切分**
+5. **稍难词汇 / 短语**
 
 ## 各节要求
 
@@ -69,13 +69,18 @@ At the same time, the $794 billion figure likely overstates the amount of US inv
 状语              主语                    状语   谓语       宾语                              程度状语
 ````
 
-### 3. 用 / 切分
+### 3. 翻译
+
+- 给出准确、通顺的中文翻译。
+- 一句英文对应一句（或自然分段的）中文；不要逐词生硬直译。
+
+### 4. 用 / 切分
 
 - 按意群用 `/` 分开，便于朗读停顿。
 - 切分粒度适中：不要每个词都切，也不要整句不切。
 - 多句时逐句切分。
 
-### 4. 稍难词汇 / 短语
+### 5. 稍难词汇 / 短语
 
 - 只列**稍微有点难**的词或短语（中级偏上：专业词、固定搭配、易混义项、习语）。
 - 跳过超基础词（a/the/is/of 等），除非在本句有特殊用法。
@@ -88,11 +93,6 @@ At the same time, the $794 billion figure likely overstates the amount of US inv
   - 再紧跟一行或同格内列出常用全套：原形、第三人称单数、过去式、过去分词、现在分词（不规则动词务必写全）。
   - 词已是原形、或变形极常规且无学习价值时（如简单规则过去式且释义已够）可省略全套，但本句若出现 `adjusted` / `understates` / `cited` 这类，优先补全。
   - 写法示例（释义列内）：`本句：过去式。全套：adjust / adjusts / adjusted / adjusted / adjusting`
-
-### 5. 翻译
-
-- 给出准确、通顺的中文翻译。
-- 一句英文对应一句（或自然分段的）中文；不要逐词生硬直译。
 
 ## 可选加料（仅当用户额外要求时）
 
@@ -122,6 +122,8 @@ Goldman Sachs Research adjusted the widely cited measures of US hyperscaler cape
 主语                   谓语     宾语                                              目的状语
 ```
 
+### 翻译
+高盛研究部调整了此前被广泛引用的美国超大规模云厂商资本支出指标，以便得出更为全面的估算。
 
 ### 用 / 切分
 Goldman Sachs Research / adjusted / the widely cited measures / of US hyperscaler capex / to produce / a more comprehensive estimate.
@@ -134,6 +136,3 @@ Goldman Sachs Research / adjusted / the widely cited measures / of US hyperscale
 | widely cited | `/ˈwaɪdli saɪtɪd/` | 被广泛引用的。cited 本句：过去分词（作定语）。cite：cite / cites / cited / cited / citing |
 | hyperscaler | `/ˈhaɪpəˌskeɪlə/` | 超大规模云厂商 |
 | capex | `/ˈkæpeks/` | capital expenditure，资本支出 |
-
-### 翻译
-高盛研究部调整了此前被广泛引用的美国超大规模云厂商资本支出指标，以便得出更为全面的估算。
