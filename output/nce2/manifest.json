@@ -1,0 +1,583 @@
+{
+  "source": "scrape_articles.py",
+  "count": 96,
+  "articles": [
+    {
+      "index": 1,
+      "file": "001_a-private-conversation.json",
+      "title_en": "A Private Conversation",
+      "url": "https://www.bubeijuzi.com/nce/2/1"
+    },
+    {
+      "index": 2,
+      "file": "002_breakfast-or-lunch.json",
+      "title_en": "Breakfast or lunch?",
+      "url": "https://www.bubeijuzi.com/nce/2/2"
+    },
+    {
+      "index": 3,
+      "file": "003_please-send-me-a-card.json",
+      "title_en": "Please Send Me a Card",
+      "url": "https://www.bubeijuzi.com/nce/2/3"
+    },
+    {
+      "index": 4,
+      "file": "004_an-exciting-trip.json",
+      "title_en": "An exciting trip",
+      "url": "https://www.bubeijuzi.com/nce/2/4"
+    },
+    {
+      "index": 5,
+      "file": "005_no-wrong-numbers.json",
+      "title_en": "No wrong numbers",
+      "url": "https://www.bubeijuzi.com/nce/2/5"
+    },
+    {
+      "index": 6,
+      "file": "006_percy-buttons.json",
+      "title_en": "Percy Buttons",
+      "url": "https://www.bubeijuzi.com/nce/2/6"
+    },
+    {
+      "index": 7,
+      "file": "007_too-late.json",
+      "title_en": "Too late",
+      "url": "https://www.bubeijuzi.com/nce/2/7"
+    },
+    {
+      "index": 8,
+      "file": "008_the-best-and-the-worst.json",
+      "title_en": "The Best and the Worst",
+      "url": "https://www.bubeijuzi.com/nce/2/8"
+    },
+    {
+      "index": 9,
+      "file": "009_a-cold-welcome.json",
+      "title_en": "A Cold Welcome",
+      "url": "https://www.bubeijuzi.com/nce/2/9"
+    },
+    {
+      "index": 10,
+      "file": "010_not-for-jazz.json",
+      "title_en": "Not For Jazz",
+      "url": "https://www.bubeijuzi.com/nce/2/10"
+    },
+    {
+      "index": 11,
+      "file": "011_one-good-turn-deserves-another.json",
+      "title_en": "One Good Turn Deserves Another",
+      "url": "https://www.bubeijuzi.com/nce/2/11"
+    },
+    {
+      "index": 12,
+      "file": "012_goodbye-and-good-luck.json",
+      "title_en": "Goodbye and Good Luck",
+      "url": "https://www.bubeijuzi.com/nce/2/12"
+    },
+    {
+      "index": 13,
+      "file": "013_the-greenwood-boys.json",
+      "title_en": "The Greenwood Boys",
+      "url": "https://www.bubeijuzi.com/nce/2/13"
+    },
+    {
+      "index": 14,
+      "file": "014_do-you-speak-english.json",
+      "title_en": "Do you speak English?",
+      "url": "https://www.bubeijuzi.com/nce/2/14"
+    },
+    {
+      "index": 15,
+      "file": "015_good-news.json",
+      "title_en": "Good News",
+      "url": "https://www.bubeijuzi.com/nce/2/15"
+    },
+    {
+      "index": 16,
+      "file": "016_a-polite-request.json",
+      "title_en": "A polite request",
+      "url": "https://www.bubeijuzi.com/nce/2/16"
+    },
+    {
+      "index": 17,
+      "file": "017_always-young.json",
+      "title_en": "Always young",
+      "url": "https://www.bubeijuzi.com/nce/2/17"
+    },
+    {
+      "index": 18,
+      "file": "018_he-often-does-this.json",
+      "title_en": "He often does this!",
+      "url": "https://www.bubeijuzi.com/nce/2/18"
+    },
+    {
+      "index": 19,
+      "file": "019_sold-out.json",
+      "title_en": "Sold out",
+      "url": "https://www.bubeijuzi.com/nce/2/19"
+    },
+    {
+      "index": 20,
+      "file": "020_one-man-in-a-boat.json",
+      "title_en": "One man in a boat",
+      "url": "https://www.bubeijuzi.com/nce/2/20"
+    },
+    {
+      "index": 21,
+      "file": "021_mad-or-not.json",
+      "title_en": "Mad or not",
+      "url": "https://www.bubeijuzi.com/nce/2/21"
+    },
+    {
+      "index": 22,
+      "file": "022_a-glass-envelope.json",
+      "title_en": "A Glass Envelope",
+      "url": "https://www.bubeijuzi.com/nce/2/22"
+    },
+    {
+      "index": 23,
+      "file": "023_a-new-house.json",
+      "title_en": "A New House",
+      "url": "https://www.bubeijuzi.com/nce/2/23"
+    },
+    {
+      "index": 24,
+      "file": "024_it-could-be-worse.json",
+      "title_en": "It could be worse",
+      "url": "https://www.bubeijuzi.com/nce/2/24"
+    },
+    {
+      "index": 25,
+      "file": "025_do-the-english-speak-english.json",
+      "title_en": "Do the English speak English?",
+      "url": "https://www.bubeijuzi.com/nce/2/25"
+    },
+    {
+      "index": 26,
+      "file": "026_the-best-art-critics.json",
+      "title_en": "The Best Art Critics",
+      "url": "https://www.bubeijuzi.com/nce/2/26"
+    },
+    {
+      "index": 27,
+      "file": "027_a-wet-night.json",
+      "title_en": "A wet night",
+      "url": "https://www.bubeijuzi.com/nce/2/27"
+    },
+    {
+      "index": 28,
+      "file": "028_no-parking.json",
+      "title_en": "No parking",
+      "url": "https://www.bubeijuzi.com/nce/2/28"
+    },
+    {
+      "index": 29,
+      "file": "029_taxi.json",
+      "title_en": "Taxi",
+      "url": "https://www.bubeijuzi.com/nce/2/29"
+    },
+    {
+      "index": 30,
+      "file": "030_football-or-polo.json",
+      "title_en": "Football or Polo?",
+      "url": "https://www.bubeijuzi.com/nce/2/30"
+    },
+    {
+      "index": 31,
+      "file": "031_success-story.json",
+      "title_en": "Success Story",
+      "url": "https://www.bubeijuzi.com/nce/2/31"
+    },
+    {
+      "index": 32,
+      "file": "032_shopping-made-easy.json",
+      "title_en": "Shopping Made Easy",
+      "url": "https://www.bubeijuzi.com/nce/2/32"
+    },
+    {
+      "index": 33,
+      "file": "033_out-of-the-darkness.json",
+      "title_en": "Out of the Darkness",
+      "url": "https://www.bubeijuzi.com/nce/2/33"
+    },
+    {
+      "index": 34,
+      "file": "034_quick-work.json",
+      "title_en": "Quick work",
+      "url": "https://www.bubeijuzi.com/nce/2/34"
+    },
+    {
+      "index": 35,
+      "file": "035_stop-thief.json",
+      "title_en": "Stop Thief!",
+      "url": "https://www.bubeijuzi.com/nce/2/35"
+    },
+    {
+      "index": 36,
+      "file": "036_across-the-channel.json",
+      "title_en": "Across the Channel",
+      "url": "https://www.bubeijuzi.com/nce/2/36"
+    },
+    {
+      "index": 37,
+      "file": "037_the-olympic-games.json",
+      "title_en": "The Olympic Games",
+      "url": "https://www.bubeijuzi.com/nce/2/37"
+    },
+    {
+      "index": 38,
+      "file": "038_everything-except-the-weather.json",
+      "title_en": "Everything except the weather",
+      "url": "https://www.bubeijuzi.com/nce/2/38"
+    },
+    {
+      "index": 39,
+      "file": "039_am-i-all-right.json",
+      "title_en": "Am I all right?",
+      "url": "https://www.bubeijuzi.com/nce/2/39"
+    },
+    {
+      "index": 40,
+      "file": "040_food-and-talk.json",
+      "title_en": "Food and Talk",
+      "url": "https://www.bubeijuzi.com/nce/2/40"
+    },
+    {
+      "index": 41,
+      "file": "041_do-you-call-that-a-hat.json",
+      "title_en": "Do You Call That a Hat?",
+      "url": "https://www.bubeijuzi.com/nce/2/41"
+    },
+    {
+      "index": 42,
+      "file": "042_not-very-musical.json",
+      "title_en": "Not very musical",
+      "url": "https://www.bubeijuzi.com/nce/2/42"
+    },
+    {
+      "index": 43,
+      "file": "043_over-the-south-pole.json",
+      "title_en": "Over the South Pole",
+      "url": "https://www.bubeijuzi.com/nce/2/43"
+    },
+    {
+      "index": 44,
+      "file": "044_through-the-forest.json",
+      "title_en": "Through the Forest",
+      "url": "https://www.bubeijuzi.com/nce/2/44"
+    },
+    {
+      "index": 45,
+      "file": "045_a-clear-conscience.json",
+      "title_en": "A Clear Conscience",
+      "url": "https://www.bubeijuzi.com/nce/2/45"
+    },
+    {
+      "index": 46,
+      "file": "046_expensive-and-uncomfortable.json",
+      "title_en": "Expensive and Uncomfortable",
+      "url": "https://www.bubeijuzi.com/nce/2/46"
+    },
+    {
+      "index": 47,
+      "file": "047_a-thirsty-ghost.json",
+      "title_en": "A Thirsty Ghost",
+      "url": "https://www.bubeijuzi.com/nce/2/47"
+    },
+    {
+      "index": 48,
+      "file": "048_did-you-want-to-tell-me-something.json",
+      "title_en": "Did you want to tell me something?",
+      "url": "https://www.bubeijuzi.com/nce/2/48"
+    },
+    {
+      "index": 49,
+      "file": "049_the-end-of-a-dream.json",
+      "title_en": "The end of a dream",
+      "url": "https://www.bubeijuzi.com/nce/2/49"
+    },
+    {
+      "index": 50,
+      "file": "050_taken-for-a-ride.json",
+      "title_en": "Taken for a ride",
+      "url": "https://www.bubeijuzi.com/nce/2/50"
+    },
+    {
+      "index": 51,
+      "file": "051_reward-for-virtue.json",
+      "title_en": "Reward for Virtue",
+      "url": "https://www.bubeijuzi.com/nce/2/51"
+    },
+    {
+      "index": 52,
+      "file": "052_a-pretty-carpet.json",
+      "title_en": "A pretty carpet",
+      "url": "https://www.bubeijuzi.com/nce/2/52"
+    },
+    {
+      "index": 53,
+      "file": "053_hot-snake.json",
+      "title_en": "Hot Snake",
+      "url": "https://www.bubeijuzi.com/nce/2/53"
+    },
+    {
+      "index": 54,
+      "file": "054_sticky-fingers.json",
+      "title_en": "Sticky fingers",
+      "url": "https://www.bubeijuzi.com/nce/2/54"
+    },
+    {
+      "index": 55,
+      "file": "055_not-a-gold-mine.json",
+      "title_en": "Not a gold mine",
+      "url": "https://www.bubeijuzi.com/nce/2/55"
+    },
+    {
+      "index": 56,
+      "file": "056_faster-than-sound.json",
+      "title_en": "Faster than Sound!",
+      "url": "https://www.bubeijuzi.com/nce/2/56"
+    },
+    {
+      "index": 57,
+      "file": "057_can-i-help-you-madam.json",
+      "title_en": "Can I help you, madam?",
+      "url": "https://www.bubeijuzi.com/nce/2/57"
+    },
+    {
+      "index": 58,
+      "file": "058_a-blessing-in-disguise.json",
+      "title_en": "A Blessing in Disguise",
+      "url": "https://www.bubeijuzi.com/nce/2/58"
+    },
+    {
+      "index": 59,
+      "file": "059_in-or-out.json",
+      "title_en": "In or out",
+      "url": "https://www.bubeijuzi.com/nce/2/59"
+    },
+    {
+      "index": 60,
+      "file": "060_the-future.json",
+      "title_en": "The Future",
+      "url": "https://www.bubeijuzi.com/nce/2/60"
+    },
+    {
+      "index": 61,
+      "file": "061_trouble-with-the-hubble.json",
+      "title_en": "Trouble with the Hubble",
+      "url": "https://www.bubeijuzi.com/nce/2/61"
+    },
+    {
+      "index": 62,
+      "file": "062_after-the-fire.json",
+      "title_en": "After the Fire",
+      "url": "https://www.bubeijuzi.com/nce/2/62"
+    },
+    {
+      "index": 63,
+      "file": "063_she-was-not-amused.json",
+      "title_en": "She was not amused",
+      "url": "https://www.bubeijuzi.com/nce/2/63"
+    },
+    {
+      "index": 64,
+      "file": "064_the-channel-tunnel.json",
+      "title_en": "The Channel Tunnel",
+      "url": "https://www.bubeijuzi.com/nce/2/64"
+    },
+    {
+      "index": 65,
+      "file": "065_jumbo-versus-the-police.json",
+      "title_en": "Jumbo versus the police",
+      "url": "https://www.bubeijuzi.com/nce/2/65"
+    },
+    {
+      "index": 66,
+      "file": "066_sweet-as-honey.json",
+      "title_en": "Sweet as Honey",
+      "url": "https://www.bubeijuzi.com/nce/2/66"
+    },
+    {
+      "index": 67,
+      "file": "067_volcanoes.json",
+      "title_en": "Volcanoes",
+      "url": "https://www.bubeijuzi.com/nce/2/67"
+    },
+    {
+      "index": 68,
+      "file": "068_persistent.json",
+      "title_en": "Persistent",
+      "url": "https://www.bubeijuzi.com/nce/2/68"
+    },
+    {
+      "index": 69,
+      "file": "069_but-not-murder.json",
+      "title_en": "But not murder!",
+      "url": "https://www.bubeijuzi.com/nce/2/69"
+    },
+    {
+      "index": 70,
+      "file": "070_red-for-danger.json",
+      "title_en": "Red for Danger",
+      "url": "https://www.bubeijuzi.com/nce/2/70"
+    },
+    {
+      "index": 71,
+      "file": "071_a-famous-clock.json",
+      "title_en": "A Famous Clock",
+      "url": "https://www.bubeijuzi.com/nce/2/71"
+    },
+    {
+      "index": 72,
+      "file": "072_a-car-called-bluebird.json",
+      "title_en": "A car called Bluebird",
+      "url": "https://www.bubeijuzi.com/nce/2/72"
+    },
+    {
+      "index": 73,
+      "file": "073_the-record-holder.json",
+      "title_en": "The record-holder",
+      "url": "https://www.bubeijuzi.com/nce/2/73"
+    },
+    {
+      "index": 74,
+      "file": "074_out-of-the-limelight.json",
+      "title_en": "Out of the Limelight",
+      "url": "https://www.bubeijuzi.com/nce/2/74"
+    },
+    {
+      "index": 75,
+      "file": "075_sos.json",
+      "title_en": "SOS",
+      "url": "https://www.bubeijuzi.com/nce/2/75"
+    },
+    {
+      "index": 76,
+      "file": "076_to-the-antarctic.json",
+      "title_en": "To the Antarctic",
+      "url": "https://www.bubeijuzi.com/nce/2/76"
+    },
+    {
+      "index": 77,
+      "file": "077_a-successful-operation.json",
+      "title_en": "A successful operation",
+      "url": "https://www.bubeijuzi.com/nce/2/77"
+    },
+    {
+      "index": 78,
+      "file": "078_the-last-one.json",
+      "title_en": "The Last One",
+      "url": "https://www.bubeijuzi.com/nce/2/78"
+    },
+    {
+      "index": 79,
+      "file": "079_by-air.json",
+      "title_en": "By air",
+      "url": "https://www.bubeijuzi.com/nce/2/79"
+    },
+    {
+      "index": 80,
+      "file": "080_the-crystal-palace.json",
+      "title_en": "The Crystal Palace",
+      "url": "https://www.bubeijuzi.com/nce/2/80"
+    },
+    {
+      "index": 81,
+      "file": "081_escape.json",
+      "title_en": "Escape",
+      "url": "https://www.bubeijuzi.com/nce/2/81"
+    },
+    {
+      "index": 82,
+      "file": "082_monster-or-fish.json",
+      "title_en": "Monster or fish",
+      "url": "https://www.bubeijuzi.com/nce/2/82"
+    },
+    {
+      "index": 83,
+      "file": "083_after-the-elections.json",
+      "title_en": "After the Elections",
+      "url": "https://www.bubeijuzi.com/nce/2/83"
+    },
+    {
+      "index": 84,
+      "file": "084_on-strike.json",
+      "title_en": "On Strike",
+      "url": "https://www.bubeijuzi.com/nce/2/84"
+    },
+    {
+      "index": 85,
+      "file": "085_never-too-old-to-learn.json",
+      "title_en": "Never too old to learn",
+      "url": "https://www.bubeijuzi.com/nce/2/85"
+    },
+    {
+      "index": 86,
+      "file": "086_out-of-control.json",
+      "title_en": "Out of control",
+      "url": "https://www.bubeijuzi.com/nce/2/86"
+    },
+    {
+      "index": 87,
+      "file": "087_a-perfect-alibi.json",
+      "title_en": "A Perfect Alibi",
+      "url": "https://www.bubeijuzi.com/nce/2/87"
+    },
+    {
+      "index": 88,
+      "file": "088_trapped-in-a-mine.json",
+      "title_en": "Trapped in a mine",
+      "url": "https://www.bubeijuzi.com/nce/2/88"
+    },
+    {
+      "index": 89,
+      "file": "089_for-sale.json",
+      "title_en": "For Sale",
+      "url": "https://www.bubeijuzi.com/nce/2/89"
+    },
+    {
+      "index": 90,
+      "file": "090_what-s-for-supper.json",
+      "title_en": "What's for supper?",
+      "url": "https://www.bubeijuzi.com/nce/2/90"
+    },
+    {
+      "index": 91,
+      "file": "091_three-men-in-a-basket.json",
+      "title_en": "Three Men in a Basket",
+      "url": "https://www.bubeijuzi.com/nce/2/91"
+    },
+    {
+      "index": 92,
+      "file": "092_asking-for-trouble.json",
+      "title_en": "Asking for Trouble",
+      "url": "https://www.bubeijuzi.com/nce/2/92"
+    },
+    {
+      "index": 93,
+      "file": "093_a-noble-gift.json",
+      "title_en": "A noble gift",
+      "url": "https://www.bubeijuzi.com/nce/2/93"
+    },
+    {
+      "index": 94,
+      "file": "094_future-champions.json",
+      "title_en": "Future Champions",
+      "url": "https://www.bubeijuzi.com/nce/2/94"
+    },
+    {
+      "index": 95,
+      "file": "095_a-fantasy.json",
+      "title_en": "A fantasy",
+      "url": "https://www.bubeijuzi.com/nce/2/95"
+    },
+    {
+      "index": 96,
+      "file": "096_the-dead-return.json",
+      "title_en": "The dead return",
+      "url": "https://www.bubeijuzi.com/nce/2/96"
+    }
+  ],
+  "failed": []
+}

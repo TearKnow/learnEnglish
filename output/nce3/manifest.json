@@ -1,0 +1,367 @@
+{
+  "source": "scrape_articles.py",
+  "count": 60,
+  "articles": [
+    {
+      "index": 1,
+      "file": "001_a-puma-at-large.json",
+      "title_en": "A Puma at large",
+      "url": "https://www.bubeijuzi.com/nce/3/1"
+    },
+    {
+      "index": 2,
+      "file": "002_thirteen-equals-one.json",
+      "title_en": "Thirteen Equals One",
+      "url": "https://www.bubeijuzi.com/nce/3/2"
+    },
+    {
+      "index": 3,
+      "file": "003_an-unknown-goddess.json",
+      "title_en": "An unknown goddess",
+      "url": "https://www.bubeijuzi.com/nce/3/3"
+    },
+    {
+      "index": 4,
+      "file": "004_the-double-life-of-alfred-bloggs.json",
+      "title_en": "The double life of Alfred Bloggs",
+      "url": "https://www.bubeijuzi.com/nce/3/4"
+    },
+    {
+      "index": 5,
+      "file": "005_the-facts.json",
+      "title_en": "The facts",
+      "url": "https://www.bubeijuzi.com/nce/3/5"
+    },
+    {
+      "index": 6,
+      "file": "006_smash-and-grab.json",
+      "title_en": "Smash-and-grab",
+      "url": "https://www.bubeijuzi.com/nce/3/6"
+    },
+    {
+      "index": 7,
+      "file": "007_mutilated-ladies.json",
+      "title_en": "Mutilated ladies",
+      "url": "https://www.bubeijuzi.com/nce/3/7"
+    },
+    {
+      "index": 8,
+      "file": "008_a-famous-monastery.json",
+      "title_en": "A famous monastery",
+      "url": "https://www.bubeijuzi.com/nce/3/8"
+    },
+    {
+      "index": 9,
+      "file": "009_flying-cats.json",
+      "title_en": "Flying Cats",
+      "url": "https://www.bubeijuzi.com/nce/3/9"
+    },
+    {
+      "index": 10,
+      "file": "010_the-loss-of-the-titanic.json",
+      "title_en": "The Loss of the Titanic",
+      "url": "https://www.bubeijuzi.com/nce/3/10"
+    },
+    {
+      "index": 11,
+      "file": "011_not-guilty.json",
+      "title_en": "Not Guilty",
+      "url": "https://www.bubeijuzi.com/nce/3/11"
+    },
+    {
+      "index": 12,
+      "file": "012_life-on-a-desert-island.json",
+      "title_en": "Life on a Desert Island",
+      "url": "https://www.bubeijuzi.com/nce/3/12"
+    },
+    {
+      "index": 13,
+      "file": "013_it-s-only-me.json",
+      "title_en": "It's only me",
+      "url": "https://www.bubeijuzi.com/nce/3/13"
+    },
+    {
+      "index": 14,
+      "file": "014_a-noble-gangster.json",
+      "title_en": "A noble gangster",
+      "url": "https://www.bubeijuzi.com/nce/3/14"
+    },
+    {
+      "index": 15,
+      "file": "015_fifty-pence-worth-of-trouble.json",
+      "title_en": "Fifty pence worth of trouble",
+      "url": "https://www.bubeijuzi.com/nce/3/15"
+    },
+    {
+      "index": 16,
+      "file": "016_mary-had-a-little-lamb.json",
+      "title_en": "Mary had a Little Lamb",
+      "url": "https://www.bubeijuzi.com/nce/3/16"
+    },
+    {
+      "index": 17,
+      "file": "017_the-longest-suspension-bridge-in-the-world.json",
+      "title_en": "The longest suspension bridge in the world",
+      "url": "https://www.bubeijuzi.com/nce/3/17"
+    },
+    {
+      "index": 18,
+      "file": "018_electric-currents-in-modern-art.json",
+      "title_en": "Electric Currents in Modern Art",
+      "url": "https://www.bubeijuzi.com/nce/3/18"
+    },
+    {
+      "index": 19,
+      "file": "019_a-very-dear-cat.json",
+      "title_en": "A Very Dear Cat",
+      "url": "https://www.bubeijuzi.com/nce/3/19"
+    },
+    {
+      "index": 20,
+      "file": "020_pioneer-pilots.json",
+      "title_en": "Pioneer Pilots",
+      "url": "https://www.bubeijuzi.com/nce/3/20"
+    },
+    {
+      "index": 21,
+      "file": "021_daniel-mendoza.json",
+      "title_en": "Daniel Mendoza",
+      "url": "https://www.bubeijuzi.com/nce/3/21"
+    },
+    {
+      "index": 22,
+      "file": "022_by-heart.json",
+      "title_en": "By Heart",
+      "url": "https://www.bubeijuzi.com/nce/3/22"
+    },
+    {
+      "index": 23,
+      "file": "023_one-man-s-meat-is-another-man-s-poison.json",
+      "title_en": "One Man's Meat is Another Man's Poison",
+      "url": "https://www.bubeijuzi.com/nce/3/23"
+    },
+    {
+      "index": 24,
+      "file": "024_a-skeleton-in-the-cupboard.json",
+      "title_en": "A skeleton in the cupboard",
+      "url": "https://www.bubeijuzi.com/nce/3/24"
+    },
+    {
+      "index": 25,
+      "file": "025_the-cutty-sark.json",
+      "title_en": "The Cutty Sark",
+      "url": "https://www.bubeijuzi.com/nce/3/25"
+    },
+    {
+      "index": 26,
+      "file": "026_wanted-a-large-biscuit-tin.json",
+      "title_en": "Wanted: a large biscuit tin",
+      "url": "https://www.bubeijuzi.com/nce/3/26"
+    },
+    {
+      "index": 27,
+      "file": "027_nothing-to-sell-and-nothing-to-buy.json",
+      "title_en": "Nothing to Sell and Nothing to Buy",
+      "url": "https://www.bubeijuzi.com/nce/3/27"
+    },
+    {
+      "index": 28,
+      "file": "028_five-pounds-too-dear.json",
+      "title_en": "Five pounds too dear",
+      "url": "https://www.bubeijuzi.com/nce/3/28"
+    },
+    {
+      "index": 29,
+      "file": "029_funny-or-not.json",
+      "title_en": "Funny or not",
+      "url": "https://www.bubeijuzi.com/nce/3/29"
+    },
+    {
+      "index": 30,
+      "file": "030_the-death-of-a-ghost.json",
+      "title_en": "The death of a ghost",
+      "url": "https://www.bubeijuzi.com/nce/3/30"
+    },
+    {
+      "index": 31,
+      "file": "031_a-lovable-eccentric.json",
+      "title_en": "A Lovable Eccentric",
+      "url": "https://www.bubeijuzi.com/nce/3/31"
+    },
+    {
+      "index": 32,
+      "file": "032_a-lost-ship.json",
+      "title_en": "A lost ship",
+      "url": "https://www.bubeijuzi.com/nce/3/32"
+    },
+    {
+      "index": 33,
+      "file": "033_a-day-to-remember.json",
+      "title_en": "A day to remember",
+      "url": "https://www.bubeijuzi.com/nce/3/33"
+    },
+    {
+      "index": 34,
+      "file": "034_a-happy-discovery.json",
+      "title_en": "A Happy Discovery",
+      "url": "https://www.bubeijuzi.com/nce/3/34"
+    },
+    {
+      "index": 35,
+      "file": "035_justice-was-done.json",
+      "title_en": "Justice was done",
+      "url": "https://www.bubeijuzi.com/nce/3/35"
+    },
+    {
+      "index": 36,
+      "file": "036_a-chance-in-a-million.json",
+      "title_en": "A Chance in a Million",
+      "url": "https://www.bubeijuzi.com/nce/3/36"
+    },
+    {
+      "index": 37,
+      "file": "037_the-westhaven-express.json",
+      "title_en": "The Westhaven Express",
+      "url": "https://www.bubeijuzi.com/nce/3/37"
+    },
+    {
+      "index": 38,
+      "file": "038_the-first-calendar.json",
+      "title_en": "The first calendar",
+      "url": "https://www.bubeijuzi.com/nce/3/38"
+    },
+    {
+      "index": 39,
+      "file": "039_nothing-to-worry-about.json",
+      "title_en": "Nothing to worry about",
+      "url": "https://www.bubeijuzi.com/nce/3/39"
+    },
+    {
+      "index": 40,
+      "file": "040_food-and-talk.json",
+      "title_en": "Food and Talk",
+      "url": "https://www.bubeijuzi.com/nce/3/40"
+    },
+    {
+      "index": 41,
+      "file": "041_illusions-of-pastoral-peace.json",
+      "title_en": "Illusions of Pastoral Peace",
+      "url": "https://www.bubeijuzi.com/nce/3/41"
+    },
+    {
+      "index": 42,
+      "file": "042_modern-cavemen.json",
+      "title_en": "Modern Cavemen",
+      "url": "https://www.bubeijuzi.com/nce/3/42"
+    },
+    {
+      "index": 43,
+      "file": "043_fully-insured.json",
+      "title_en": "Fully Insured",
+      "url": "https://www.bubeijuzi.com/nce/3/43"
+    },
+    {
+      "index": 44,
+      "file": "044_speed-and-comfort.json",
+      "title_en": "Speed and Comfort",
+      "url": "https://www.bubeijuzi.com/nce/3/44"
+    },
+    {
+      "index": 45,
+      "file": "045_the-power-of-the-press.json",
+      "title_en": "The power of the press",
+      "url": "https://www.bubeijuzi.com/nce/3/45"
+    },
+    {
+      "index": 46,
+      "file": "046_do-it-yourself.json",
+      "title_en": "Do it yourself",
+      "url": "https://www.bubeijuzi.com/nce/3/46"
+    },
+    {
+      "index": 47,
+      "file": "047_too-high-a-price.json",
+      "title_en": "Too high a price",
+      "url": "https://www.bubeijuzi.com/nce/3/47"
+    },
+    {
+      "index": 48,
+      "file": "048_the-silent-village.json",
+      "title_en": "The Silent Village",
+      "url": "https://www.bubeijuzi.com/nce/3/48"
+    },
+    {
+      "index": 49,
+      "file": "049_the-ideal-servant.json",
+      "title_en": "The Ideal Servant",
+      "url": "https://www.bubeijuzi.com/nce/3/49"
+    },
+    {
+      "index": 50,
+      "file": "050_new-year-resolutions.json",
+      "title_en": "New Year Resolutions",
+      "url": "https://www.bubeijuzi.com/nce/3/50"
+    },
+    {
+      "index": 51,
+      "file": "051_predicting-the-future.json",
+      "title_en": "Predicting the future",
+      "url": "https://www.bubeijuzi.com/nce/3/51"
+    },
+    {
+      "index": 52,
+      "file": "052_mud-is-mud.json",
+      "title_en": "Mud is Mud",
+      "url": "https://www.bubeijuzi.com/nce/3/52"
+    },
+    {
+      "index": 53,
+      "file": "053_in-the-public-interest.json",
+      "title_en": "In the Public Interest",
+      "url": "https://www.bubeijuzi.com/nce/3/53"
+    },
+    {
+      "index": 54,
+      "file": "054_instinct-or-cleverness.json",
+      "title_en": "Instinct or Cleverness",
+      "url": "https://www.bubeijuzi.com/nce/3/54"
+    },
+    {
+      "index": 55,
+      "file": "055_from-the-earth-greetings.json",
+      "title_en": "From the Earth: Greetings",
+      "url": "https://www.bubeijuzi.com/nce/3/55"
+    },
+    {
+      "index": 56,
+      "file": "056_our-neighbour-the-river.json",
+      "title_en": "Our neighbour, the river",
+      "url": "https://www.bubeijuzi.com/nce/3/56"
+    },
+    {
+      "index": 57,
+      "file": "057_back-in-the-old-country.json",
+      "title_en": "Back in the old country",
+      "url": "https://www.bubeijuzi.com/nce/3/57"
+    },
+    {
+      "index": 58,
+      "file": "058_a-spot-of-bother.json",
+      "title_en": "A Spot of Bother",
+      "url": "https://www.bubeijuzi.com/nce/3/58"
+    },
+    {
+      "index": 59,
+      "file": "059_collecting.json",
+      "title_en": "Collecting",
+      "url": "https://www.bubeijuzi.com/nce/3/59"
+    },
+    {
+      "index": 60,
+      "file": "060_too-early-and-too-late.json",
+      "title_en": "Too early and too late",
+      "url": "https://www.bubeijuzi.com/nce/3/60"
+    }
+  ],
+  "failed": []
+}

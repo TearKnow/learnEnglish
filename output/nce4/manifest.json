@@ -1,0 +1,295 @@
+{
+  "source": "scrape_articles.py",
+  "count": 48,
+  "articles": [
+    {
+      "index": 1,
+      "file": "001_finding-fossil-man.json",
+      "title_en": "Finding Fossil Man",
+      "url": "https://www.bubeijuzi.com/nce/4/1"
+    },
+    {
+      "index": 2,
+      "file": "002_spare-that-spider.json",
+      "title_en": "Spare that spider",
+      "url": "https://www.bubeijuzi.com/nce/4/2"
+    },
+    {
+      "index": 3,
+      "file": "003_matterhorn-man.json",
+      "title_en": "Matterhorn Man",
+      "url": "https://www.bubeijuzi.com/nce/4/3"
+    },
+    {
+      "index": 4,
+      "file": "004_seeing-hands.json",
+      "title_en": "Seeing hands",
+      "url": "https://www.bubeijuzi.com/nce/4/4"
+    },
+    {
+      "index": 5,
+      "file": "005_youth.json",
+      "title_en": "Youth",
+      "url": "https://www.bubeijuzi.com/nce/4/5"
+    },
+    {
+      "index": 6,
+      "file": "006_the-sporting-spirit.json",
+      "title_en": "The sporting spirit",
+      "url": "https://www.bubeijuzi.com/nce/4/6"
+    },
+    {
+      "index": 7,
+      "file": "007_the-sporting-spirit.json",
+      "title_en": "The sporting spirit",
+      "url": "https://www.bubeijuzi.com/nce/4/7"
+    },
+    {
+      "index": 8,
+      "file": "008_trading-standards.json",
+      "title_en": "Trading Standards",
+      "url": "https://www.bubeijuzi.com/nce/4/8"
+    },
+    {
+      "index": 9,
+      "file": "009_royal-espionage.json",
+      "title_en": "Royal espionage",
+      "url": "https://www.bubeijuzi.com/nce/4/9"
+    },
+    {
+      "index": 10,
+      "file": "010_silicon-valley.json",
+      "title_en": "Silicon Valley",
+      "url": "https://www.bubeijuzi.com/nce/4/10"
+    },
+    {
+      "index": 11,
+      "file": "011_how-to-grow-old.json",
+      "title_en": "How to Grow Old",
+      "url": "https://www.bubeijuzi.com/nce/4/11"
+    },
+    {
+      "index": 12,
+      "file": "012_banking-and-the-economy.json",
+      "title_en": "Banking and the Economy",
+      "url": "https://www.bubeijuzi.com/nce/4/12"
+    },
+    {
+      "index": 13,
+      "file": "013_the-search-for-oil.json",
+      "title_en": "The Search for Oil",
+      "url": "https://www.bubeijuzi.com/nce/4/13"
+    },
+    {
+      "index": 14,
+      "file": "014_the-butterfly-effect.json",
+      "title_en": "The Butterfly Effect",
+      "url": "https://www.bubeijuzi.com/nce/4/14"
+    },
+    {
+      "index": 15,
+      "file": "015_secrecy-in-industry.json",
+      "title_en": "Secrecy in industry",
+      "url": "https://www.bubeijuzi.com/nce/4/15"
+    },
+    {
+      "index": 16,
+      "file": "016_the-search-for-the-earth-s-minerals.json",
+      "title_en": "The Search for the Earth's Minerals",
+      "url": "https://www.bubeijuzi.com/nce/4/16"
+    },
+    {
+      "index": 17,
+      "file": "017_the-greatest-bridge-in-the-world.json",
+      "title_en": "The Greatest Bridge in the World",
+      "url": "https://www.bubeijuzi.com/nce/4/17"
+    },
+    {
+      "index": 18,
+      "file": "018_porpoises.json",
+      "title_en": "Porpoises",
+      "url": "https://www.bubeijuzi.com/nce/4/18"
+    },
+    {
+      "index": 19,
+      "file": "019_the-stuff-of-dreams.json",
+      "title_en": "The Stuff of Dreams",
+      "url": "https://www.bubeijuzi.com/nce/4/19"
+    },
+    {
+      "index": 20,
+      "file": "020_snake-poison.json",
+      "title_en": "Snake poison",
+      "url": "https://www.bubeijuzi.com/nce/4/20"
+    },
+    {
+      "index": 21,
+      "file": "021_william-s-hart-and-the-early-western-film.json",
+      "title_en": "William S. Hart and the Early \"Western\" Film",
+      "url": "https://www.bubeijuzi.com/nce/4/21"
+    },
+    {
+      "index": 22,
+      "file": "022_knowledge-and-progress.json",
+      "title_en": "Knowledge and Progress",
+      "url": "https://www.bubeijuzi.com/nce/4/22"
+    },
+    {
+      "index": 23,
+      "file": "023_bird-flight.json",
+      "title_en": "Bird flight",
+      "url": "https://www.bubeijuzi.com/nce/4/23"
+    },
+    {
+      "index": 24,
+      "file": "024_beauty.json",
+      "title_en": "Beauty",
+      "url": "https://www.bubeijuzi.com/nce/4/24"
+    },
+    {
+      "index": 25,
+      "file": "025_non-auditory-effects-of-noise.json",
+      "title_en": "Non-auditory Effects of Noise",
+      "url": "https://www.bubeijuzi.com/nce/4/25"
+    },
+    {
+      "index": 26,
+      "file": "026_the-past-life-of-the-earth.json",
+      "title_en": "The past life of the earth",
+      "url": "https://www.bubeijuzi.com/nce/4/26"
+    },
+    {
+      "index": 27,
+      "file": "027_the-vasa.json",
+      "title_en": "The 'Vasa'",
+      "url": "https://www.bubeijuzi.com/nce/4/27"
+    },
+    {
+      "index": 28,
+      "file": "028_patients-and-doctors.json",
+      "title_en": "Patients and Doctors",
+      "url": "https://www.bubeijuzi.com/nce/4/28"
+    },
+    {
+      "index": 29,
+      "file": "029_the-hovercraft.json",
+      "title_en": "The hovercraft",
+      "url": "https://www.bubeijuzi.com/nce/4/29"
+    },
+    {
+      "index": 30,
+      "file": "030_how-animals-migrate.json",
+      "title_en": "How Animals Migrate",
+      "url": "https://www.bubeijuzi.com/nce/4/30"
+    },
+    {
+      "index": 31,
+      "file": "031_the-sculptor-speaks.json",
+      "title_en": "The sculptor speaks",
+      "url": "https://www.bubeijuzi.com/nce/4/31"
+    },
+    {
+      "index": 32,
+      "file": "032_galileo-reborn.json",
+      "title_en": "Galileo Reborn",
+      "url": "https://www.bubeijuzi.com/nce/4/32"
+    },
+    {
+      "index": 33,
+      "file": "033_education.json",
+      "title_en": "Education",
+      "url": "https://www.bubeijuzi.com/nce/4/33"
+    },
+    {
+      "index": 34,
+      "file": "034_adolescence.json",
+      "title_en": "Adolescence",
+      "url": "https://www.bubeijuzi.com/nce/4/34"
+    },
+    {
+      "index": 35,
+      "file": "035_the-process-of-ageing.json",
+      "title_en": "The process of ageing",
+      "url": "https://www.bubeijuzi.com/nce/4/35"
+    },
+    {
+      "index": 36,
+      "file": "036_the-cost-of-government.json",
+      "title_en": "The cost of government",
+      "url": "https://www.bubeijuzi.com/nce/4/36"
+    },
+    {
+      "index": 37,
+      "file": "037_the-process-of-ageing.json",
+      "title_en": "The process of ageing",
+      "url": "https://www.bubeijuzi.com/nce/4/37"
+    },
+    {
+      "index": 38,
+      "file": "038_water-and-the-traveler.json",
+      "title_en": "Water and the Traveler",
+      "url": "https://www.bubeijuzi.com/nce/4/38"
+    },
+    {
+      "index": 39,
+      "file": "039_waves.json",
+      "title_en": "Waves",
+      "url": "https://www.bubeijuzi.com/nce/4/39"
+    },
+    {
+      "index": 40,
+      "file": "040_waves.json",
+      "title_en": "Waves",
+      "url": "https://www.bubeijuzi.com/nce/4/40"
+    },
+    {
+      "index": 41,
+      "file": "041_training-elephants.json",
+      "title_en": "Training elephants",
+      "url": "https://www.bubeijuzi.com/nce/4/41"
+    },
+    {
+      "index": 42,
+      "file": "042_record-of-the-past.json",
+      "title_en": "Record of the Past",
+      "url": "https://www.bubeijuzi.com/nce/4/42"
+    },
+    {
+      "index": 43,
+      "file": "043_are-there-strangers-in-space.json",
+      "title_en": "Are There Strangers in Space?",
+      "url": "https://www.bubeijuzi.com/nce/4/43"
+    },
+    {
+      "index": 44,
+      "file": "044_patterns-of-culture.json",
+      "title_en": "Patterns of Culture",
+      "url": "https://www.bubeijuzi.com/nce/4/44"
+    },
+    {
+      "index": 45,
+      "file": "045_patterns-of-culture.json",
+      "title_en": "Patterns of culture",
+      "url": "https://www.bubeijuzi.com/nce/4/45"
+    },
+    {
+      "index": 46,
+      "file": "046_hobbies.json",
+      "title_en": "Hobbies",
+      "url": "https://www.bubeijuzi.com/nce/4/46"
+    },
+    {
+      "index": 47,
+      "file": "047_the-great-escape.json",
+      "title_en": "The Great Escape",
+      "url": "https://www.bubeijuzi.com/nce/4/47"
+    },
+    {
+      "index": 48,
+      "file": "048_planning-a-share-portfolio.json",
+      "title_en": "Planning a share portfolio",
+      "url": "https://www.bubeijuzi.com/nce/4/48"
+    }
+  ],
+  "failed": []
+}
