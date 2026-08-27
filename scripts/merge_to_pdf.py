@@ -82,11 +82,11 @@ class ArticlePDF(FPDF):
 
     def write_cover(self, title: str, count: int) -> None:
         self.set_font(self.en_font, "", 20)
-        self.multi_cell(0, 11, title)
+        self.multi_cell(0, 11, title, align="L")
         self.ln(4)
         self.set_font(self.en_font, "", 11)
         self.set_text_color(90, 90, 90)
-        self.multi_cell(0, 6, f"{count} articles")
+        self.multi_cell(0, 6, f"{count} articles", align="L")
         self.set_text_color(0, 0, 0)
         self.ln(8)
 
@@ -95,23 +95,23 @@ class ArticlePDF(FPDF):
             self.add_page()
         # 用稍大字号的 Regular，避免 Bold 显得扁、发胀
         self.set_font(self.en_font, "", 16)
-        self.multi_cell(0, 10, text)
+        self.multi_cell(0, 10, text, align="L")
         self.ln(4)
 
-    def write_heading(self, text: str, size: int = 14) -> None:
+    def write_heading(self, text: str, size: int = 15) -> None:
         if self.get_y() > self.h - self.b_margin - 36:
             self.add_page()
         self.set_x(self.l_margin)
         self.set_font(self.en_font, "", size)
-        self.multi_cell(0, 8, text)
+        self.multi_cell(0, 9, text, align="L")
         self.ln(3)
 
     def write_subheading(self, text: str, chinese: bool = False) -> None:
         font = self.cn_font if chinese else self.en_font
         self.set_x(self.l_margin)
-        self.set_font(font, "", 12 if chinese else 11)
+        self.set_font(font, "", 12 if chinese else 12)
         self.set_text_color(80, 80, 80)
-        self.multi_cell(0, 7, text.strip())
+        self.multi_cell(0, 7, text.strip(), align="L")
         self.set_text_color(0, 0, 0)
         self.ln(1)
 
@@ -123,11 +123,13 @@ class ArticlePDF(FPDF):
         if not text:
             return
         self.set_x(self.l_margin)
-        # 英文大一号；中文略小一点，避免段前因字体度量看起来像缩进
-        size = 12 if not chinese else 11
+        # 英文学习材料用 14pt；中文略小一号
+        # 行距略紧；左对齐，避免默认两端对齐把空格拉得很开
+        size = 14 if not chinese else 12
+        line_h = 6.5 if not chinese else 6.0
         self.set_font(font, "", size)
-        self.multi_cell(0, 7.5 if not chinese else 7, text)
-        self.ln(1.5 if chinese else 2)
+        self.multi_cell(0, line_h, text, align="L")
+        self.ln(3 if chinese else 3.5)
 
     def write_separator(self, blank_lines: int = 3) -> None:
         self.ln(blank_lines * 6)
