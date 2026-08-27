@@ -25,16 +25,18 @@ Agent 会按固定结构输出：**原句 → 句型分析 → 翻译 → 稍难
 
 依赖：
 
-```bash
+```powershell
 pip install -r requirements-scraper.txt
 ```
 
+PowerShell 多行命令用反引号 `` ` `` 续行（不是 cmd 的 `^`）。也可以整段写成一行。
+
 **第一步：逐篇抓取**
 
-```bash
-python scripts/scrape_articles.py ^
-  --url-template "https://www.bubeijuzi.com/nce/2/{n}" ^
-  --start 1 --end 96 ^
+```powershell
+python scripts/scrape_articles.py `
+  --url-template "https://www.bubeijuzi.com/nce/2/{n}" `
+  --start 1 --end 96 `
   --output-dir output/nce2
 ```
 
@@ -42,27 +44,47 @@ python scripts/scrape_articles.py ^
 
 每篇保存为 JSON（含英文正文 `paragraphs`、中文译文 `paragraphs_cn`），并生成 `manifest.json` 清单。
 
-**第二步：合并 PDF**
+**第二步：合并 PDF**（JSON 已抓好后，可反复合并，无需再抓页面）
 
-单册：
+只合第 2 册（英 + 中）：
 
-```bash
-python scripts/merge_to_pdf.py ^
-  --input-dir output/nce2 ^
-  --output output/nce2/nce2.pdf ^
-  --title "New Concept English Book 2"
+```powershell
+python scripts/merge_to_pdf.py `
+  --input-dir output/nce2 --book-label "Book 2" `
+  --output output/nce2.pdf `
+  --title "NCE Book 2"
 ```
 
-三册合订（每课先英文后中文）：
+只要英文（不要中文）：
 
-```bash
-python scripts/merge_to_pdf.py ^
-  --input-dir output/nce2 --book-label "Book 2" ^
-  --input-dir output/nce3 --book-label "Book 3" ^
-  --input-dir output/nce4 --book-label "Book 4" ^
-  --output output/nce2-4.pdf ^
-  --title "New Concept English Books 2-4"
+```powershell
+python scripts/merge_to_pdf.py `
+  --input-dir output/nce2 --no-chinese `
+  --output output/nce2-en.pdf `
+  --title "NCE Book 2"
 ```
 
-连续排版、可点击目录；`--no-chinese` 可只保留英文。
+三册合订（英 + 中）：
 
+```powershell
+python scripts/merge_to_pdf.py `
+  --input-dir output/nce2 --book-label "Book 2" `
+  --input-dir output/nce3 --book-label "Book 3" `
+  --input-dir output/nce4 --book-label "Book 4" `
+  --output output/nce2-4.pdf `
+  --title "NCE Books 2-4"
+```
+
+三册合订（只要英文）：
+
+```powershell
+python scripts/merge_to_pdf.py `
+  --input-dir output/nce2 --book-label "Book 2" `
+  --input-dir output/nce3 --book-label "Book 3" `
+  --input-dir output/nce4 --book-label "Book 4" `
+  --no-chinese `
+  --output output/nce2-4-en.pdf `
+  --title "NCE Books 2-4"
+```
+
+连续排版、可点击目录；换 `--input-dir` / `--book-label` 即可合其它册。
