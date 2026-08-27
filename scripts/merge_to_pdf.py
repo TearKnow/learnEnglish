@@ -16,10 +16,34 @@ except ImportError:
     sys.exit(1)
 
 
-def find_unicode_font() -> Path | None:
+def find_latin_font() -> tuple[Path | None, Path | None]:
+    """返回 (regular, bold) 西文字体路径。优先 Times，屏幕阅读更稳。"""
+    pairs = [
+        (Path(r"C:\Windows\Fonts\times.ttf"), Path(r"C:\Windows\Fonts\timesbd.ttf")),
+        (Path(r"C:\Windows\Fonts\calibri.ttf"), Path(r"C:\Windows\Fonts\calibrib.ttf")),
+        (Path(r"C:\Windows\Fonts\georgia.ttf"), Path(r"C:\Windows\Fonts\georgiab.ttf")),
+        (Path("/System/Library/Fonts/Supplemental/Times New Roman.ttf"), Path("/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf")),
+        (Path("/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"), Path("/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf")),
+    ]
+    for regular, bold in pairs:
+        if regular.exists():
+            return regular, bold if bold.exists() else regular
+    return None, None
+
+
+def normalize_latin_text(text: str) -> str:
+    """把常见全角符号换成西文字体更易显示的半角形式。"""
+    return (
+        text.replace("\uffe1", "£")  # ￡
+        .replace("\uff0d", "-")  # －
+        .replace("\u2013", "-")
+        .replace("\u2014", "--")
+    )
+
+
+def find_cjk_font() -> Path | None:
     candidates = [
         Path(r"C:\Windows\Fonts\msyh.ttc"),
-        Path(r"C:\Windows\Fonts\msyhbd.ttc"),
         Path(r"C:\Windows\Fonts\simsun.ttc"),
         Path("/System/Library/Fonts/PingFang.ttc"),
         Path("/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"),
@@ -32,26 +56,35 @@ def find_unicode_font() -> Path | None:
 
 
 class ArticlePDF(FPDF):
-    def __init__(self, unicode_font: Path | None = None) -> None:
+    def __init__(
+        self,
+        latin_regular: Path | None = None,
+        latin_bold: Path | None = None,
+        cjk_font: Path | None = None,
+    ) -> None:
         super().__init__(format="A4")
         self.set_auto_page_break(auto=True, margin=20)
         self.set_margins(20, 20, 20)
-        self.body_font = "Helvetica"
-        self.heading_font = "Helvetica"
-        self.meta_font = "Helvetica"
 
-        if unicode_font:
-            self.add_font("Uni", "", str(unicode_font))
-            self.add_font("Uni", "B", str(unicode_font))
-            self.body_font = "Uni"
-            self.heading_font = "Uni"
-            self.meta_font = "Uni"
+        # 英文默认用内置 Helvetica；有系统西文字体则换成 Georgia 等
+        self.en_font = "Helvetica"
+        self.cn_font = "Helvetica"
+
+        if latin_regular:
+            self.add_font("Latin", "", str(latin_regular))
+            self.add_font("Latin", "B", str(latin_bold or latin_regular))
+            self.en_font = "Latin"
+
+        if cjk_font:
+            self.add_font("CJK", "", str(cjk_font))
+            self.add_font("CJK", "B", str(cjk_font))
+            self.cn_font = "CJK"
 
     def write_cover(self, title: str, count: int) -> None:
-        self.set_font(self.heading_font, "B", 22)
-        self.multi_cell(0, 12, title)
+        self.set_font(self.en_font, "", 20)
+        self.multi_cell(0, 11, title)
         self.ln(4)
-        self.set_font(self.meta_font, "", 11)
+        self.set_font(self.en_font, "", 11)
         self.set_text_color(90, 90, 90)
         self.multi_cell(0, 6, f"{count} articles")
         self.set_text_color(0, 0, 0)
@@ -60,28 +93,41 @@ class ArticlePDF(FPDF):
     def write_book_heading(self, text: str) -> None:
         if self.get_y() > self.h - self.b_margin - 48:
             self.add_page()
-        self.set_font(self.heading_font, "B", 18)
+        # 用稍大字号的 Regular，避免 Bold 显得扁、发胀
+        self.set_font(self.en_font, "", 16)
         self.multi_cell(0, 10, text)
         self.ln(4)
 
     def write_heading(self, text: str, size: int = 14) -> None:
         if self.get_y() > self.h - self.b_margin - 36:
             self.add_page()
-        self.set_font(self.heading_font, "B", size)
+        self.set_x(self.l_margin)
+        self.set_font(self.en_font, "", size)
         self.multi_cell(0, 8, text)
-        self.ln(2)
+        self.ln(3)
 
-    def write_subheading(self, text: str) -> None:
-        self.set_font(self.heading_font, "B", 11)
+    def write_subheading(self, text: str, chinese: bool = False) -> None:
+        font = self.cn_font if chinese else self.en_font
+        self.set_x(self.l_margin)
+        self.set_font(font, "", 12 if chinese else 11)
         self.set_text_color(80, 80, 80)
-        self.multi_cell(0, 7, text)
+        self.multi_cell(0, 7, text.strip())
         self.set_text_color(0, 0, 0)
         self.ln(1)
 
-    def write_paragraph(self, text: str) -> None:
-        self.set_font(self.body_font, "", 11)
-        self.multi_cell(0, 6.5, text)
-        self.ln(2)
+    def write_paragraph(self, text: str, chinese: bool = False) -> None:
+        font = self.cn_font if chinese else self.en_font
+        text = text.strip().lstrip("\u3000\xa0\u200b")
+        if not chinese:
+            text = normalize_latin_text(text)
+        if not text:
+            return
+        self.set_x(self.l_margin)
+        # 英文大一号；中文略小一点，避免段前因字体度量看起来像缩进
+        size = 12 if not chinese else 11
+        self.set_font(font, "", size)
+        self.multi_cell(0, 7.5 if not chinese else 7, text)
+        self.ln(1.5 if chinese else 2)
 
     def write_separator(self, blank_lines: int = 3) -> None:
         self.ln(blank_lines * 6)
@@ -131,7 +177,7 @@ def estimate_toc_pages(section_count: int, article_count: int, lines_per_page: i
 
 
 def render_toc(pdf: ArticlePDF, outline) -> None:
-    pdf.set_font(pdf.heading_font, "B", 16)
+    pdf.set_font(pdf.en_font, "", 16)
     pdf.multi_cell(0, 10, "Contents")
     pdf.ln(4)
 
@@ -149,7 +195,7 @@ def render_toc(pdf: ArticlePDF, outline) -> None:
         pdf.set_x(pdf.l_margin)
         available = pdf.epw
         font_size = 12 if level == 0 else 10
-        pdf.set_font(pdf.body_font, "B" if level == 0 else "", font_size)
+        pdf.set_font(pdf.en_font, "", font_size)
         title_width = pdf.get_string_width(title) + 2
         page_width = pdf.get_string_width(page_str) + 1
         dots_width = max(available - title_width - page_width, 8)
@@ -186,11 +232,16 @@ def build_pdf(
     if total == 0:
         raise ValueError("没有可合并的文章")
 
-    unicode_font = font_path or find_unicode_font()
-    if include_chinese and not unicode_font:
-        raise RuntimeError("需要中文内容，但未找到 Unicode 字体，请用 --font 指定")
+    latin_regular, latin_bold = find_latin_font()
+    cjk_font = font_path or (find_cjk_font() if include_chinese else None)
+    if include_chinese and not cjk_font:
+        raise RuntimeError("需要中文内容，但未找到中文字体，请用 --font 指定")
 
-    pdf = ArticlePDF(unicode_font=unicode_font)
+    pdf = ArticlePDF(
+        latin_regular=latin_regular,
+        latin_bold=latin_bold,
+        cjk_font=cjk_font,
+    )
 
     pdf.add_page()
     pdf.write_cover(title, total)
@@ -218,16 +269,16 @@ def build_pdf(
             pdf.write_heading(label)
 
             for paragraph in paragraphs_of(article, en=True):
-                pdf.write_paragraph(paragraph)
+                pdf.write_paragraph(paragraph, chinese=False)
 
             if include_chinese:
                 cn_paragraphs = paragraphs_of(article, en=False)
                 if cn_paragraphs:
-                    pdf.ln(3)
-                    title_cn = article.get("title_cn") or "中文翻译"
-                    pdf.write_subheading(title_cn)
+                    pdf.ln(2)
+                    title_cn = (article.get("title_cn") or "中文翻译").strip()
+                    pdf.write_subheading(title_cn, chinese=True)
                     for paragraph in cn_paragraphs:
-                        pdf.write_paragraph(paragraph)
+                        pdf.write_paragraph(paragraph, chinese=True)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     pdf.output(str(output_path))
@@ -281,7 +332,7 @@ def main(argv: Iterable[str] | None = None) -> int:
     )
     parser.add_argument(
         "--font",
-        help="自定义 TTF/TTC 字体路径",
+        help="自定义中文 TTF/TTC 字体路径（英文默认用 Georgia 等西文字体）",
     )
     args = parser.parse_args(list(argv) if argv is not None else None)
 
